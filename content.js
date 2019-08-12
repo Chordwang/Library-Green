@@ -120,8 +120,8 @@ function BaiDuClone(){
 function ShowCloneState(){
 	//
 	var ThisDivStyle;
-	var ThisTopJi=50;
-	var ThisTopOu=50;
+	var ThisTopJi=5;
+	var ThisTopOu=5;
 	var ThisDivName;
 	//
 	for (var i=1;i<=PageCount;i++)
@@ -131,15 +131,15 @@ function ShowCloneState(){
 		//
 		if(i%2==1){
 			//
-			ThisDivStyle="<div id="+ThisDivName+" style=\"position:fixed; top:"+ThisTopJi+"px; right:50px; width:15px; height:15px; background-color:#FFCC00;\"></div>";
+			ThisDivStyle="<div id="+ThisDivName+" style=\"position:fixed; top:"+ThisTopJi+"%; right:5%; width:15px; height:15px; background-color:#FFCC00;\"></div>";
 			//
-			ThisTopJi+=25;
+			ThisTopJi+=2;
 		}
 		else{
 			//
-			ThisDivStyle="<div id="+ThisDivName+" style=\"position:fixed; top:"+ThisTopOu+"px; right:25px; width:15px; height:15px; background-color:#FFCC00;\"></div>";
+			ThisDivStyle="<div id="+ThisDivName+" style=\"position:fixed; top:"+ThisTopOu+"%; right:4%; width:15px; height:15px; background-color:#FFCC00;\"></div>";
 			//
-			ThisTopOu+=25;
+			ThisTopOu+=2;
 		}
 		//
 		$("body").append(ThisDivStyle);
